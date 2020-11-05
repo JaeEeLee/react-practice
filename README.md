@@ -1,3 +1,3 @@
-# Antiredux
+# React-practice
 
-Relplacing Redux with the new React Context API
+리액트 타파하기
