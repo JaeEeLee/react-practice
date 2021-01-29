@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Left =  () => {
 
@@ -14,11 +15,13 @@ const Left =  () => {
 				<ul className="sidebar-menu">
 					<li className="menu-header">React</li>
 					<li className="dropdown active">
-						<a href="#" className="nav-link has-dropdown"><i className="fas fa-fire"></i><span>Dashboard</span></a>
-						<ul className="dropdown-menu">
+						<Link to='/file' className="nav-link has-dropdown">
+							<i className="fas fa-fire"></i><span>FileUpload</span>
+						</Link>
+						{/* <ul className="dropdown-menu">
 							<li><a className="nav-link" href="index-0.html">UseEffect</a></li>
 							<li className="active"><a className="nav-link" href="index.html">UseDispatch</a></li>
-						</ul>
+						</ul> */}
 					</li>
 				</ul>
 			</aside>

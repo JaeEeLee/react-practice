@@ -1,5 +1,5 @@
 import React, { useEffect, useReducer, useRef } from 'react';
-import { Top, Left } from './Components/layout';
+import { Top, Left, Main } from './Components/layout';
 import { getGitService } from './services/git.service';
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
 		<div className="main-wrapper main-wrapper-1">
 			<Top />
 			<Left />
-			<div className="main-content" style={{minHeight: '851px'}}></div>
+			<Main/>
 		</div>
 	)
 }
