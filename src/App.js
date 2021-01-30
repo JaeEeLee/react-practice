@@ -1,4 +1,4 @@
-import React, { useEffect, useReducer, useRef } from 'react';
+import React, { Fragment, useEffect, useRef } from 'react';
 import { Top, Left, Main } from './Components/layout';
 import { getGitService } from './services/git.service';
 
@@ -17,11 +17,13 @@ const App = () => {
 
 
 	return (
-		<div className="main-wrapper main-wrapper-1">
-			<Top />
-			<Left />
-			<Main/>
-		</div>
+		<Fragment>
+			 <div class="main-wrapper main-wrapper-1">
+				<Top />
+				<Left />
+				<Main />
+			</div>
+		</Fragment>
 	)
 }
 
